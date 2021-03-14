@@ -9,11 +9,11 @@
 
 Installation des packages, liaison à la BDD + migrations et load des fixtures : 
 
-  composer install
-  php bin/console doctrine:database:create
-  php bin/console doctrine:migrations:diff
-  php bin/console doctrine:migrations:migrate
-  php bin/console doctrine:fixtures:load
+  - composer install
+  - php bin/console doctrine:database:create
+  - php bin/console doctrine:migrations:diff
+  - php bin/console doctrine:migrations:migrate
+  - php bin/console doctrine:fixtures:load
   
 ### Lancement du projet
 
@@ -47,7 +47,7 @@ Installation des packages, liaison à la BDD + migrations et load des fixtures :
     PUT    -> http://127.0.0.1:8000/intervenants/{id}
     DELETE -> http://127.0.0.1:8000/intervenants/{id}
   
-  #### Matières
+  #### Matière
 
     GET    -> http://127.0.0.1:8000/matieres
     GET    -> http://127.0.0.1:8000/matieres/{id}
@@ -72,12 +72,12 @@ Il est à noté que l'installation d'une authentification par JWT est configuré
 
 Installation des packages et d'API Platform, liaison à la BDD + migrations et load des fixtures : 
 
-  composer install
-  composer require api (installe le pack API)
-  php bin/console doctrine:database:create
-  php bin/console doctrine:migrations:diff
-  php bin/console doctrine:migrations:migrate
-  php bin/console doctrine:fixtures:load
+  - composer install
+  - composer require api (installe le pack API)
+  - php bin/console doctrine:database:create
+  - php bin/console doctrine:migrations:diff
+  - php bin/console doctrine:migrations:migrate
+  - php bin/console doctrine:fixtures:load
   
 ### Lancement du projet
 
@@ -112,7 +112,7 @@ Installation des packages et d'API Platform, liaison à la BDD + migrations et l
     PUT    -> http://127.0.0.1:8000/intervenants/{id}
     DELETE -> http://127.0.0.1:8000/interenants/{id}
   
-  #### Matières
+  #### Matière
 
     GET    -> http://127.0.0.1:8000/matieres
     GET    -> http://127.0.0.1:8000/matieres/{id}
@@ -129,3 +129,4 @@ Installation des packages et d'API Platform, liaison à la BDD + migrations et l
   - Retourner sur API Platform et sélectionner l'onglet "Authorize" (en haut à gauche de la page);
   - Insérer, dans le champs "Type", "Bearer 'token généré'"; 
 
+N'oubliez pas de créer votre dossier config/jwt, générer des clés privée et publique via openSSL et insérer votre passphrase dans le ".env". 

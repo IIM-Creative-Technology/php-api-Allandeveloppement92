@@ -62,7 +62,7 @@ Installation des packages, liaison à la BDD + migrations et load des fixtures :
   - Récupérer l'API Key d'un utilisateur sur la table "User"; 
   - Retourner sur Postman et sélectionner l'onglet "Authorization";
   - Sélectionner "API Key" dans la liste déroulante "Type"; 
-  - Insérer l'API Key dans le champs "Value"; 
+  - Insérer l'API Key dans le champs "Value".
 
 Il est à noté que l'installation d'une authentification par JWT est configurée sur le projet via "LexikJWTAuthenticationBundle", mais n'est pas fonctionnelle.  
 
@@ -86,7 +86,7 @@ Installation des packages et d'API Platform, liaison à la BDD + migrations et l
 ### Les requêtes possibles 
 
   Sur Postman et sur API platform, il est possible de réaliser des requêtes sur l'API. 
-  Puur accèder à API Platform, dans le navigateur, il faut taper la route : http://127.0.0.1:8000/api (ou http://127.0.0.1:8000/api/docs).
+  Pour accèder à API Platform, dans le navigateur, il faut taper la route : http://127.0.0.1:8000/api (ou http://127.0.0.1:8000/api/docs).
   
 #### Etudiant
 
@@ -125,8 +125,8 @@ Installation des packages et d'API Platform, liaison à la BDD + migrations et l
   Sur cette API, l'authentification ce fait par JWT (Token). 
   Il faut donc : 
   - A partir de Postman, sur la route "/login", faire une méthode POST pour se connecter, en insérant son "username" (email) et son "password" (password); 
-  - Récupérer le token généré lors de l'authentification. 
+  - Récupérer le token généré lors de l'authentification;
   - Retourner sur API Platform et sélectionner l'onglet "Authorize" (en haut à gauche de la page);
-  - Insérer, dans le champs "Type", "Bearer 'token généré'"; 
+  - Insérer, dans le champs "Type", "Bearer 'token généré'". 
 
 N'oubliez pas de créer votre dossier config/jwt, générer des clés privée et publique via openSSL et insérer votre passphrase dans le ".env". 

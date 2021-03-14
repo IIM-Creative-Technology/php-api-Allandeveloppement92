@@ -1,0 +1,14 @@
+api_platform:
+    title: MY DEVINCI API by Allan Germé 
+    version: 1.0.0
+    description: Une API développée pour l'axe Développement Web de l'IIM 
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+        api-keys:
+            api_key:
+                name: Authorization
+                type: header
